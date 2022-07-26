@@ -311,20 +311,20 @@
 
     <footer class="footer">
       <div class="contacts">
-        <div>
+        <div class="block-one">
           <a class="footer-logo" href="./index.html"
             ><span class="accert">Web</span>Studio</a
           >
 
           <address>
             <ul class="list">
-              <li class="contact-item">
+              <li class="contact">
                 <a
                   href="https://goo.gl/maps/G5h7r23HQDHLUZFr6"
                   target="_blank"
                   rel="noopener noreferrer"
                   class="footer-address"
-                  >г. Киев, пр-т Леси Украинки, 26</a
+                  >г. Київ, пр-т Лесі Українки, 26</a
                 >
               </li>
               <li class="contact-item">
@@ -340,8 +340,9 @@
             </ul>
           </address>
         </div>
-        <div>
-          <p class="action">присоединяйтесь</p>
+        <div class="block-two">
+          <p class="action">приєднуйтеся</p>
+
           <ul class="icons list">
             <li clas="icons-item">
               <a href="/" class="circle">
@@ -372,6 +373,17 @@
               </a>
             </li>
           </ul>
+        </div>
+        <div class="block-three">
+          <p class="action">Підпишіться на розсилку</p>
+          <form class="signup" name="signup-form" autocomplete="on" novalidate>
+            <input type="email" name="email" id="email" placeholder="Email" />
+            <button class="signup-button" type="signup">
+              Підписатися<svg class="signup-icon" width="24" height="24">
+                <use href="./images/icon-test.svg#icon-plane"></use>
+              </svg>
+            </button>
+          </form>
         </div>
       </div>
     </footer>
