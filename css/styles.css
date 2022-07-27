@@ -435,7 +435,7 @@ body {
   border-radius: 4px;
   fill: var(--icon-color);
 
-  transition-duration: var(--button-background-color);
+  transition-property: var(--button-background-color);
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
@@ -1097,6 +1097,20 @@ body {
   position: relative;
   border: 1px solid rgba(33, 33, 33, 0.2);
   border-radius: 4px;
+
+  transition-property: var(--button-background-color);
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.modal-input:hover {
+  outline: none;
+  border-color: var(--accent-color);
+}
+
+.modal-input:focus {
+  outline: none;
+  border-color: var(--accent-color);
 }
 
 .modal-field input::placeholder,
@@ -1143,7 +1157,7 @@ body {
   font-family: "Roboto";
   font-style: normal;
   font-weight: 400;
-  font-size: 14px;
+  font-size: 12px;
   line-height: 1.74;
   letter-spacing: 0.03em;
   color: #2196f3;
@@ -1173,12 +1187,24 @@ body {
   resize: none;
   width: 448px;
   height: 120px;
+  font-style: 12px;
+
+  transition-property: var(--button-background-color);
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.modal-comment:placeholder {
+.modal-comment:hover,
+.modal-comment:focus {
+  outline: none;
+  border-color: var(--accent-color);
+}
+
+.modal-comment:placeholder input {
   border: 1px solid rgba(33, 33, 33, 0.2);
   border-radius: 4px;
   resize: none;
+  font-size: 12px;
 }
 
 .button-send {
@@ -1224,10 +1250,20 @@ body {
   right: 80px;
   bottom: 15px;
   cursor: pointer;
+
+  transition-property: var(--button-background-color);
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .close-icon:hover {
   fill: var(--accent-color);
+}
+
+.close:focus .close-icon {
+  fill: var(--accent-color);
+  outline: none;
+  border-color: #2196f3;
 }
 
 .input-wrap {
@@ -1245,9 +1281,6 @@ body {
 .modal-input:hover + .modal-icon,
 .modal-input:focus + .modal-icon {
   fill: var(--accent-color);
-  background-color: 1px solid rgba(198, 28, 28, 0.2);
-}
-
-.input-wrap:hover {
-  background-color: #2196f3;
+  outline: none;
+  border-color: var(--accent-color);
 }
